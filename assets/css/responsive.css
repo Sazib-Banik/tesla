@@ -1,0 +1,134 @@
+@media (max-width: 360px) {
+  h1 {
+    font-size: 40.7px;
+    line-height: 43px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 41px;
+  }
+  h3 {
+    font-size: 36.46px;
+    line-height: 36px;
+  }
+  h4 {
+    font-size: 32.44px;
+  }
+  h5 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+  img {
+    width: 100%;
+    vertical-align: center;
+  }
+  .container {
+    width: 360px;
+    flex-wrap: wrap;
+    padding: 0px 15px;
+  }
+  .section_padding {
+    padding: 70px 0;
+  }
+  .theam_btn {
+    font-size: 16px;
+    padding: 10px 40px;
+  }
+  /* header_part css start */
+  #header_part .logo {
+    width: 100px;
+  }
+
+  /* hero_part css start */
+  #hero_part {
+    padding: 100px 0px 120px;
+  }
+  #hero_part .hero_left {
+    width: 100%;
+  }
+  #hero_part .hero_left h2 {
+    margin-bottom: 15px;
+  }
+  #hero_part .hero_right {
+    width: 100%;
+  }
+  .hero_right img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  /* memory_part css start */
+  #memory_part .memory_center h3 {
+    margin-bottom: 20px;
+  }
+  /* travel_blog_part css start */
+  #travel_blog .single_blog_item {
+    width: 100%;
+    margin-top: 35px;
+  }
+  #travel_blog .single_blog_item h5 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  #travel_blog .single_blog_item img {
+    margin-bottom: 40px;
+  }
+  #travel_blog .single_blog_item h5::before {
+    top: -20px;
+  }
+  /* newsletter_part css start */
+  .newsletter_center img {
+    width: 60px;
+  }
+  /* blog_part css start */
+  .blog_right_content {
+    flex-wrap: wrap;
+  }
+  .blog_right_content_left h5 {
+    line-height: 30px;
+  }
+  /* choosen_part css start */
+  #choosen_part h4 {
+    padding-bottom: 0px;
+  }
+  #choosen_part .choosen_part_item {
+    margin-top: 35px;
+  }
+  #choosen_part .choosen_part_item h6 {
+    margin-bottom: 10px;
+  }
+  .choosen_part_right img {
+    margin-top: 35px;
+  }
+  /* review_part css start */
+  #review_part .single_customer_item {
+    width: 100%;
+    padding: 30px 35px;
+  }
+  #review_part .single_customer_item img {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+  /* contact_part css start */
+  #contact_part h3 {
+    margin-bottom: 35px;
+  }
+  #contact_part .contact_left {
+    width: 100%;
+    padding-right: 0%;
+  }
+  #contact_part .contact_right {
+    width: 100%;
+    margin-top: 35px;
+  }
+  /* footer_part css start */
+  #footer_part .footer_right {
+    width: 100%;
+  }
+  #footer_part .footer_right .links {
+    margin-top: 0px;
+    flex-wrap: wrap;
+  }
+  #footer_part .footer_right .links .link {
+    width: 50%;
+  }
+}
