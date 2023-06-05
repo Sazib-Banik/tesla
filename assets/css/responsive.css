@@ -1,4 +1,4 @@
-@media (max-width: 360px) {
+@media (max-width: 412px) {
   h1 {
     font-size: 40.7px;
     line-height: 43px;
@@ -38,7 +38,20 @@
   #header_part .logo {
     width: 100px;
   }
-
+  #header_part .menu a {
+    margin-left: 10px;
+    font-size: 13.83px;
+    font-weight: 400;
+  }
+  #header_part .menu a:hover {
+    font-weight: 500;
+  }
+  #header_part .header_btn {
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-top: 5px;
+  }
   /* hero_part css start */
   #hero_part {
     padding: 100px 0px 120px;
