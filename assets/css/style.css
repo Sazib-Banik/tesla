@@ -207,7 +207,9 @@ ul li {
   width: 780px;
   text-align: center;
 }
-
+#newsletter_part .newsletter_center h1 span {
+  text-decoration: underline;
+}
 /* ========== newsletter_part css end ========== */
 /* ========== blog_part css start ========== */
 #blog_part .container {
@@ -216,14 +218,15 @@ ul li {
 #blog_part .blog_right_img {
   margin-bottom: 80px;
 }
-.blog_right_content {
+#blog_part .blog_right_content {
   display: flex;
   gap: 15px;
 }
-.blog_right_content_left h5 {
+#blog_part .blog_right_content_left h5 {
   line-height: 45px;
+  text-decoration: underline;
 }
-.blog_right_content_right p {
+#blog_part .blog_right_content_right p {
   margin-bottom: 15px;
 }
 /* ========== blog_part css end ========== */
@@ -252,7 +255,6 @@ ul li {
   margin-bottom: 50px;
 }
 #review_part .single_customer_item {
-  width: 30%;
   border: 3px solid var(--secondary-color);
   padding: 40px 50px;
   text-align: center;
@@ -261,8 +263,43 @@ ul li {
 #review_part .single_customer_item h6 {
   margin-bottom: 10px;
 }
-#review_part .carousel {
-  position: relative;
+#review_part .single_customer_item .single_customer_item_img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+#review_part .single_customer_item .single_customer_item_img img {
+  width: 130px;
+  text-align: center;
+  margin: 0 auto;
+}
+.carousel {
+  padding: 20px 0;
+}
+.owl-theme .owl-nav [class*="owl-"] {
+  border-radius: 15%;
+}
+.owl-next {
+  right: -33px;
+}
+.owl-prev {
+  left: -33px;
+}
+.owl-next,
+.owl-prev {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--secondary-color) !important;
+  position: absolute;
+  bottom: 45%;
+  background-color: var(--primary-color) !important;
+}
+.owl-next span,
+.owl-prev span {
+  font-size: 65px;
+  margin-top: -8px;
 }
 /* ========== review_part css end ========== */
 /* ========== contact_part css start ========== */
@@ -319,6 +356,11 @@ ul li {
 }
 #footer_part .footer_right .links .link ul li {
   margin: 20px 0;
+  transition: 0.4s;
+}
+#footer_part .footer_right .links .link ul li:hover {
+  color: #232323;
+  margin-left: 5px;
 }
 #footer_part .footer_right {
   width: 939px;

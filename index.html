@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TESLA - Home page</title>
     <link rel="icon" type="image/x-icon" href="./assets/image/favicon.ico" />
+    <link rel="stylesheet" href="./assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
-
   <body>
     <!-- ========== header_part start========== -->
     <header id="header_part">
@@ -113,7 +114,7 @@
       <div class="container">
         <div class="newsletter_center">
           <img src="./assets/image/aroplane.png" alt="aroplane-image" />
-          <h1>See places you’ve never been before</h1>
+          <h1>See places you’ve <span>never</span> been before</h1>
         </div>
       </div>
     </section>
@@ -191,30 +192,84 @@
           <h2>Here’s what they have to say...</h2>
         </div>
       </div>
-      <div class="container carousel">
-        <div class="single_customer_item">
-          <img src="./assets/image/person-icon.png" alt="customer-image" />
-          <h6>Customer Name</h6>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei
-            usmod tempor incid idunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div class="single_customer_item">
-          <img src="./assets/image/person-icon.png" alt="customer-image" />
-          <h6>Customer Name</h6>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei
-            usmod tempor incid idunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div class="single_customer_item">
-          <img src="./assets/image/person-icon.png" alt="customer-image" />
-          <h6>Customer Name</h6>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei
-            usmod tempor incid idunt ut labore et dolore magna aliqua.
-          </p>
+      <div class="container">
+        <div class="owl-carousel owl-theme carousel">
+          <div class="item">
+            <div class="single_customer_item">
+              <div class="single_customer_item_img">
+                <img
+                  src="./assets/image/person-icon.png"
+                  alt="customer-image"
+                />
+              </div>
+
+              <h6>Customer Name</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                ei usmod tempor incid idunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="single_customer_item">
+              <div class="single_customer_item_img">
+                <img
+                  src="./assets/image/person-icon.png"
+                  alt="customer-image"
+                />
+              </div>
+              <h6>Customer Name</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                ei usmod tempor incid idunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="single_customer_item">
+              <div class="single_customer_item_img">
+                <img
+                  src="./assets/image/person-icon.png"
+                  alt="customer-image"
+                />
+              </div>
+              <h6>Customer Name</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                ei usmod tempor incid idunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="single_customer_item">
+              <div class="single_customer_item_img">
+                <img
+                  src="./assets/image/person-icon.png"
+                  alt="customer-image"
+                />
+              </div>
+              <h6>Customer Name</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                ei usmod tempor incid idunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="single_customer_item">
+              <div class="single_customer_item_img">
+                <img
+                  src="./assets/image/person-icon.png"
+                  alt="customer-image"
+                />
+              </div>
+              <h6>Customer Name</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                ei usmod tempor incid idunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -310,5 +365,36 @@
       </div>
     </footer>
     <!-- ========== footer_part end========== -->
+    <!-- ========== jquery css start========== -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          responsiveClass: true,
+          nav: true,
+          dots: false,
+          autoplay: true,
+          autoplayTimeout: 1000,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true,
+            },
+            600: {
+              items: 3,
+              nav: true,
+            },
+            1000: {
+              items: 3,
+              nav: true,
+              loop: false,
+            },
+          },
+        });
+      });
+    </script>
   </body>
 </html>
