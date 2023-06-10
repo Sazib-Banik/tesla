@@ -8,28 +8,34 @@
     <link rel="icon" type="image/x-icon" href="./assets/image/favicon.ico" />
     <link rel="stylesheet" href="./assets/css/owl.carousel.css" />
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
     <!-- ========== header_part start========== -->
-    <header id="header_part">
+    <header>
       <div class="container">
-        <div class="logo">
-          <a href="#"><img src="./assets/image/logo.png" alt="logo-image" /></a>
-        </div>
-        <nav class="menu">
-          <a href="#">Home</a>
-          <a href="#">Guides</a>
-          <a href="#">Flights</a>
-          <a href="#">About</a>
-        </nav>
-        <div class="header_btn">
+        <a href="#" class="logo">
+          <img src="./assets/image/logo.png" alt="" />
+        </a>
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Guides</a></li>
+          <li><a href="#">Flights</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div class="main">
           <a href="#" class="theam_btn">Contact us</a>
+          <div class="bx bx-menu" id="menu-icon">
+            <i class="ri-menu-line"></i>
+          </div>
         </div>
       </div>
     </header>
-
     <!-- ========== header_part end========== -->
     <!-- ========== hero_part start========== -->
     <main id="hero_part">
@@ -369,6 +375,15 @@
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/owl.carousel.min.js"></script>
     <script>
+      let menu = document.querySelector("#menu-icon");
+      let navbar = document.querySelector(".navbar");
+
+      menu.onclick = () => {
+        menu.classList.toggle("bx-x");
+        navbar.classList.toggle("open");
+      };
+    </script>
+    <script>
       $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
           loop: true,
@@ -383,7 +398,11 @@
               items: 1,
               nav: true,
             },
-            600: {
+            475: {
+              items: 2,
+              nav: true,
+            },
+            641: {
               items: 3,
               nav: true,
             },

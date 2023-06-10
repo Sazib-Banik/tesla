@@ -96,45 +96,68 @@ ul li {
 }
 /* ========== common css end ========== */
 /* ========== header_part css start ========== */
-#header_part {
+
+header {
   background-color: #cccccc;
-  padding: 23px 0px 20px;
 }
-#header_part .container {
+header .container {
+  width: 1209px;
+  margin: 0 auto;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-#header_part .logo {
-  width: 260px;
-}
-#header_part .menu {
-  text-align: center;
-}
-#header_part .menu a {
-  margin-left: 75px;
-  font-size: 20.83px;
-  color: #515155;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
+  background-color: transparent;
+  padding: 20px 0;
   transition: 0.4s;
 }
-#header_part .menu a:hover {
-  color: var(--secondary-color);
-  font-weight: 400;
+.logo {
+  display: flex;
+  align-items: center;
 }
-#header_part .header_btn {
-  width: 260px;
-  float: right;
+.logo img {
 }
-#header_part .header_btn .theam_btn {
-  border: 3px solid #232323;
-  font-weight: 700;
+
+header .navbar {
+  display: flex;
+}
+header .navbar a {
+  color: #515155;
+  font-size: 20.83px;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0px 30px;
+  transition: 0.4s;
+}
+header .navbar .active,
+header .navbar a:hover {
+  color: #232323;
+}
+header .main {
+  display: flex;
+  align-items: center;
+}
+header .main a {
+  margin-left: 10px;
+  margin-right: 25px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #232323;
+}
+header .main .theam_btn {
+  border: 2px solid #232323;
+}
+header .main #menu-icon {
+  font-size: 35px;
+  cursor: pointer;
+  z-index: 1001;
+  display: none;
 }
 /* ========== header_part css end ========== */
 /* ========== hero_part css start ========== */
 #hero_part {
   padding: 140px 0px 245px;
+  background-color: #e9e7e7;
 }
 #hero_part .hero_left {
   width: 40%;
@@ -215,6 +238,10 @@ ul li {
 #blog_part .container {
   gap: 25px;
 }
+#blog_part .blog_left,
+#blog_part .blog_right {
+  width: 50%;
+}
 #blog_part .blog_right_img {
   margin-bottom: 80px;
 }
@@ -231,6 +258,10 @@ ul li {
 }
 /* ========== blog_part css end ========== */
 /* ========== choosen_part css start ========== */
+#choosen_part .choosen_part_left,
+#choosen_part .choosen_part_right {
+  width: 50%;
+}
 #choosen_part {
   background-color: var(--secondary-color);
 }
