@@ -42,6 +42,7 @@
     justify-content: flex-start;
     border-radius: 10px;
     transition: 0.4s;
+    display: none;
   }
   header .navbar a {
     display: block;
@@ -51,6 +52,7 @@
   }
   header .navbar.open {
     right: 2%;
+    display: block;
   }
   /* newsletter_part css start */
   .newsletter_center img {
