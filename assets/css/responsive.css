@@ -195,6 +195,9 @@
   #header_part .container {
     gap: 0;
   }
+  header .logo img {
+    width: 110px;
+  }
   #navbar-toggle {
     top: 25px;
   }
@@ -257,6 +260,10 @@
     width: 60px;
   }
   /* blog_part css start */
+  #blog_part .blog_left,
+  #blog_part .blog_right {
+    width: 100%;
+  }
   .blog_right_content {
     flex-wrap: wrap;
   }
@@ -264,6 +271,10 @@
     line-height: 30px;
   }
   /* choosen_part css start */
+  #choosen_part .choosen_part_left,
+  #choosen_part .choosen_part_right {
+    width: 100%;
+  }
   #choosen_part h4 {
     padding-bottom: 0px;
   }
@@ -318,5 +329,16 @@
   }
   #footer_part .footer_right .links .link {
     width: 50%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  #header_part .main .theam_btn {
+    font-size: 14px;
+    padding: 7px 15px !important;
+    display: inline-block;
+  }
+  header .main a {
+    margin-left: 0px;
+    margin-right: 10px;
   }
 }
