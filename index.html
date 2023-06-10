@@ -384,35 +384,33 @@
       };
     </script>
     <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          loop: true,
-          margin: 10,
-          responsiveClass: true,
-          nav: true,
-          dots: false,
-          autoplay: true,
-          autoplayTimeout: 1000,
-          responsive: {
-            0: {
-              items: 1,
-              nav: true,
-            },
-            475: {
-              items: 2,
-              nav: true,
-            },
-            641: {
-              items: 3,
-              nav: true,
-            },
-            1000: {
-              items: 3,
-              nav: true,
-              loop: false,
-            },
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 1500,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true,
           },
-        });
+          475: {
+            items: 2,
+            nav: true,
+          },
+          641: {
+            items: 3,
+            nav: true,
+          },
+          1000: {
+            items: 3,
+            nav: true,
+            loop: false,
+          },
+        },
       });
     </script>
   </body>

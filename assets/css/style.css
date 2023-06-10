@@ -16,6 +16,7 @@ font-family: 'Lato', sans-serif;
 }
 body {
   background-color: var(--primary-color);
+  overflow-x: hidden;
 }
 h1 {
   font-size: 97.7px;
